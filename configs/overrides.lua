@@ -12,6 +12,10 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "go",
+    "gomod",
+    "gosum",
+    "gowork",
   },
   indent = {
     enable = true,
@@ -37,6 +41,8 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+    "gopls",
+    "goimports",
   },
 }
 
