@@ -13,23 +13,30 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.clangd.setup {
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16"
+  }
+}
+
 -- golang
 util = require "lspconfig/util"
 
-  lspconfig.gopls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    cmd = {"gopls", "serve"},
-    filetypes = {"go", "gomod"},
-    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
-    settings = {
-      gopls = {
-        analyses = {
-          unusedparams = true,
-        },
-        staticcheck = true,
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "gopls", "serve" },
+  filetypes = { "go", "gomod" },
+  root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
       },
+      staticcheck = true,
     },
-  }
--- 
+  },
+}
+--
 -- lspconfig.pyright.setup { blabla}
