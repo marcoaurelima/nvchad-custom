@@ -62,9 +62,10 @@ local plugins = {
       require("tabnine").setup {
         disable_auto_comment = true,
         --accept_keymap = "<Tab>",
-        accept_keymap = "<Right>",
-        dismiss_keymap = "<C-]>",
-        debounce_ms = 800,
+        accept_keymap = "<S-Right>",
+        -- dismiss_keymap = "<C-]>",
+        dismiss_keymap = "<S-Left>",
+        debounce_ms = 600,
         suggestion_color = { gui = "#808080", cterm = 244 },
         exclude_filetypes = { "TelescopePrompt" },
         log_file_path = nil, -- absolute path to Tabnine log file
