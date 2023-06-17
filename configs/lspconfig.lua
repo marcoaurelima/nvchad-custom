@@ -13,5 +13,21 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- golang
+util = require "lspconfig/util"
+
+  lspconfig.gopls.setup {
+    cmd = {"gopls", "serve"},
+    filetypes = {"go", "gomod"},
+    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+    settings = {
+      gopls = {
+        analyses = {
+          unusedparams = true,
+        },
+        staticcheck = true,
+      },
+    },
+  }
 -- 
 -- lspconfig.pyright.setup { blabla}
