@@ -68,6 +68,7 @@ local plugins = {
         exclude_filetypes = { "TelescopePrompt" },
         log_file_path = nil, -- absolute path to Tabnine log file
       }
+      -- require("tabnine.status").status()
     end,
   },
   -- To make a plugin not be loaded
