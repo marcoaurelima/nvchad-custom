@@ -17,6 +17,9 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
+
+  -- golang
+  b.formatting.goimports,
 }
 
 null_ls.setup {

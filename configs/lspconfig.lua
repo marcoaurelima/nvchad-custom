@@ -17,6 +17,8 @@ end
 util = require "lspconfig/util"
 
   lspconfig.gopls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
     cmd = {"gopls", "serve"},
     filetypes = {"go", "gomod"},
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
