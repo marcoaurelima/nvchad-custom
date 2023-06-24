@@ -25,6 +25,9 @@ M.general = {
     ["<leader>fls"] = { "<cmd> FlutterSuper <CR>", "Flutter Super" },
     ["<leader>fly"] = { "<cmd> FlutterReanalyze <CR>", "Flutter Reanalyze" },
     ["<leader>fln"] = { "<cmd> FlutterRename <CR>", "Flutter Rename" },
+    ["K"] = { "<Cmd>lua vim.lsp.buf.hover()<CR>", "Show Hover" },
+    ["<leader>gd"] = { "<Cmd>lua vim.lsp.buf.definition()<CR>", "Go definition" },
+    ["<leader>ca"] = { "<Cmd>lua vim.lsp.buf.code_action()<CR>", "Code Actions" },
   },
 }
 
