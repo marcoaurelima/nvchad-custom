@@ -28,6 +28,9 @@ M.general = {
     ["K"] = { "<Cmd>lua vim.lsp.buf.hover()<CR>", "Show Hover" },
     ["<leader>gd"] = { "<Cmd>lua vim.lsp.buf.definition()<CR>", "Go definition" },
     ["<leader>ca"] = { "<Cmd>lua vim.lsp.buf.code_action()<CR>", "Code Actions" },
+
+    -- ZenMode
+    ["<leader><leader>"] = { "<cmd> ZenMode <CR>", "ZenMode" },
   },
 }
 
