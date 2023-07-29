@@ -23,7 +23,7 @@ lspconfig.clangd.setup {
 }
 
 -- golang
-util = require "lspconfig/util"
+local util = require "lspconfig/util"
 
 lspconfig.gopls.setup {
   on_attach = on_attach,

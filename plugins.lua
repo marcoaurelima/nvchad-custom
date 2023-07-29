@@ -138,6 +138,9 @@ local plugins = {
       },
     },
     config = function(plugin, opts)
+      vim.fn.sign_define("DapBreakpoint", { text = "🔴", texthl = "", linehl = "", numhl = "" })
+      vim.fn.sign_define("DapStopped", { text = "➜", texthl = "", linehl = "", numhl = "" })
+
       require("nvim-dap-virtual-text").setup {
         commented = true,
       }
@@ -204,25 +207,25 @@ local plugins = {
       require("mason-nvim-dap").setup()
     end,
   },
-{
-    'akinsho/flutter-tools.nvim',
+  {
+    "akinsho/flutter-tools.nvim",
     lazy = false,
     dependencies = {
-        'nvim-lua/plenary.nvim',
-        'stevearc/dressing.nvim', -- optional for vim.ui.select
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
     config = true,
-},
+  },
 
-{
-  "folke/zen-mode.nvim",
-  lazy = false,
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  }
-},
+  {
+    "folke/zen-mode.nvim",
+    lazy = false,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
