@@ -282,6 +282,10 @@ local plugins = {
       -- For now, we don't have any specific configuration
     end,
   },
+  {
+    "f-person/git-blame.nvim",
+    lazy = false
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
