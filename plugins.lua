@@ -226,6 +226,13 @@ local plugins = {
       -- refer to the configuration section below
     },
   },
+  {
+    "petertriho/nvim-scrollbar",
+    config = function ()
+      require("scrollbar").setup()
+    end,
+    lazy = false,
+  }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
