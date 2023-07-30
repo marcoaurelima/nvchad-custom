@@ -218,15 +218,6 @@ local plugins = {
   },
 
   {
-    "folke/zen-mode.nvim",
-    lazy = false,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-  },
-  {
     "petertriho/nvim-scrollbar",
     config = function()
       require("scrollbar").setup()
@@ -251,6 +242,22 @@ local plugins = {
     end,
     lazy = false,
   },
+  {
+    "sunjon/shade.nvim",
+    config = function()
+      require("shade").setup {
+        overlay_opacity = 50,
+        opacity_step = 1,
+        keys = {
+          brightness_up = "<C-Up>",
+          brightness_down = "<C-Down>",
+          toggle = "<Leader>s",
+        },
+      }
+    end,
+    lazy = false,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
