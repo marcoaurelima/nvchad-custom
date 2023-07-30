@@ -257,6 +257,10 @@ local plugins = {
     end,
     lazy = false,
   },
+  {
+    "uga-rosa/ccc.nvim",
+    lazy = false,
+  },
 
   -- To make a plugin not be loaded
   -- {
