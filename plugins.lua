@@ -261,7 +261,19 @@ local plugins = {
     "uga-rosa/ccc.nvim",
     lazy = false,
   },
-
+  {
+    "utilyre/barbecue.nvim",
+    lazy = false,
+    name = "barbecue",
+    version = "*",
+    dependencies = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    opts = {
+      -- configurations go here
+    },
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
