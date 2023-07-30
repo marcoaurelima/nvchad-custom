@@ -284,8 +284,12 @@ local plugins = {
   },
   {
     "f-person/git-blame.nvim",
-    lazy = false
+    lazy = false,
   },
+  -- {
+  --   "sindrets/diffview.nvim",
+  --   lazy = false,
+  -- },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
