@@ -34,7 +34,7 @@ M.general = {
     ["<leader>dl"] = { "<Cmd> lua require'dap'.list_breakpoints() <CR>", "List Breakpoints" }, -- não funciona ainda
 
     -- BufOnly
-    ["<leader>X"] = { "<Cmd>BufOnly<CR>", "List Breakpoints" }, -- não funciona ainda
+    ["<leader>X"] = { ":BufOnly<CR>", "List Breakpoints" }
   },
 }
 
