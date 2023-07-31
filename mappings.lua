@@ -35,6 +35,10 @@ M.general = {
 
     -- BufOnly
     ["<leader>X"] = { ":BufOnly<CR>", "BufOnly" },
+
+    -- Split
+    ["|"] = { ":vsp<CR>", "Split Vertical" },
+    ["<leader><ESC>"] = { ":q<CR>", "Close cmd" },
   },
 }
 
