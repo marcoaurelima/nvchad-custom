@@ -286,6 +286,21 @@ local plugins = {
     "f-person/git-blame.nvim",
     lazy = false,
   },
+  {
+    "Mr-LLLLL/interestingwords.nvim",
+    lazy = false,
+    config = function()
+      require("interestingwords").setup {
+        colors = { '#aeee00', '#ff0000', '#0000ff', '#b88823', '#ffa724', '#ff2c4b' },
+        search_count = true,
+        navigation = true,
+        search_key = "<leader>is",
+        cancel_search_key = "<leader>ix",
+        color_key = "<leader>ic",
+        cancel_color_key = "<leader>iX",
+    }
+    end,
+  },
   -- {
   --   "sindrets/diffview.nvim",
   --   lazy = false,
