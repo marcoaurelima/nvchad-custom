@@ -3,7 +3,7 @@ local M = {}
 
 M.general = {
   n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    --[";"] = { ":", "enter command mode", opts = { nowait = true } },
 
     -- Lazy Git
     ["<leader>ll"] = { "<cmd> LazyGit <CR>", "LazyGit" },
