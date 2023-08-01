@@ -16,6 +16,7 @@ M.treesitter = {
     "gomod",
     "gosum",
     "gowork",
+    "java"
   },
   indent = {
     enable = true,
@@ -43,6 +44,7 @@ M.mason = {
     "clang-format",
     "gopls",
     "goimports",
+    "jdtls"
   },
 }
 
