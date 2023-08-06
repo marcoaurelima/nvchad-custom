@@ -286,6 +286,10 @@ local plugins = {
     }
     end,
   },
+  {
+    "matze/vim-move",
+    lazy = false,
+  }
   -- {
   --   "sindrets/diffview.nvim",
   --   lazy = false,
