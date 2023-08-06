@@ -24,17 +24,17 @@ M.ui = {
     -- round and block will work for minimal theme only
     separator_style = "default",
     -- overriden_modules = nil,
-    overriden_modules = function()
-      local st_modules = require "nvchad_ui.statusline.default"
-      -- this is just default table of statusline modules
-
-      return {
-        mode = function()
-          return st_modules.mode() .. require("tabnine.status").status()
-          -- or just return "" to hide this module
-        end,
-      }
-    end,
+    -- overriden_modules = function()
+    --   local st_modules = require "nvchad_ui.statusline.default"
+    --   -- this is just default table of statusline modules
+    --
+    --   return {
+    --     mode = function()
+    --       return st_modules.mode() .. require("tabnine.status").status()
+    --       -- or just return "" to hide this module
+    --     end,
+    --   }
+    -- end,
   },
 
   nvdash = {
