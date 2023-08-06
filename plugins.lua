@@ -276,20 +276,58 @@ local plugins = {
     lazy = false,
     config = function()
       require("interestingwords").setup {
-        colors = { '#aeee00', '#ff0000', '#0000ff', '#b88823', '#ffa724', '#ff2c4b' },
+        colors = { "#aeee00", "#ff0000", "#0000ff", "#b88823", "#ffa724", "#ff2c4b" },
         search_count = true,
         navigation = true,
         search_key = "<leader>is",
         cancel_search_key = "<leader>ix",
         color_key = "<leader>ic",
         cancel_color_key = "<leader>iX",
-    }
+      }
     end,
   },
   {
     "matze/vim-move",
     lazy = false,
-  }
+  },
+  {
+    "glepnir/dashboard-nvim",
+    event = "VimEnter",
+    config = function()
+      require("dashboard").setup {
+        theme = "hyper",
+        config = {
+          week_header = {
+            enable = true,
+          },
+          shortcut = {
+            { desc = "󰊳 Update", group = "@property", action = "Lazy update", key = "u" },
+            {
+              icon = " ",
+              icon_hl = "@variable",
+              desc = "Files",
+              group = "Label",
+              action = "Telescope find_files",
+              key = "f",
+            },
+            {
+              desc = " Apps",
+              group = "DiagnosticHint",
+              action = "Telescope app",
+              key = "a",
+            },
+            {
+              desc = " dotfiles",
+              group = "Number",
+              action = "Telescope dotfiles",
+              key = "d",
+            },
+          },
+        },
+      }
+    end,
+    dependencies = { { "nvim-tree/nvim-web-devicons" } },
+  },
   -- {
   --   "sindrets/diffview.nvim",
   --   lazy = false,
