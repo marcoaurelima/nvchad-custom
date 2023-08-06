@@ -276,7 +276,19 @@ local plugins = {
     lazy = false,
     config = function()
       require("interestingwords").setup {
-        colors = { "#aeee00", "#ff0000", "#0000ff", "#b88823", "#ffa724", "#ff2c4b" },
+        -- colors = { "#aeee00", "#ff0000", "#0000ff", "#b88823", "#ffa724", "#ff2c4b" },
+        colors = {
+          "#61AFEF", -- Azul
+          "#98C379", -- Verde
+          "#E5C07B", -- Amarelo
+          "#D19A66", -- Laranja
+          "#C678DD", -- Roxo
+          "#56B6C2", -- Ciano
+          "#E06C75", -- Vermelho
+          "#FF9E64", -- Cor de pêssego
+          "#FF757F", -- Rosa
+          "#A4CCD9", -- Azul Claro
+        },
         search_count = true,
         navigation = true,
         search_key = "<leader>is",
