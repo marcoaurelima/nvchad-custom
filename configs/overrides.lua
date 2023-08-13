@@ -18,6 +18,7 @@ M.treesitter = {
     "gosum",
     "gowork",
     "java",
+    "python"
   },
   indent = {
     enable = true,
@@ -46,6 +47,7 @@ M.mason = {
     "gopls",
     "goimports",
     "jdtls",
+    "pyright"
   },
 }
 
