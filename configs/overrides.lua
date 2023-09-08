@@ -47,7 +47,8 @@ M.mason = {
     "gopls",
     "goimports",
     "jdtls",
-    "pyright"
+    "pyright",
+    "autopep8",
   },
 }
 

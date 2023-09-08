@@ -20,6 +20,9 @@ local sources = {
 
   -- golang
   b.formatting.goimports,
+
+  -- python
+  b.formatting.autopep8,
 }
 
 null_ls.setup {
