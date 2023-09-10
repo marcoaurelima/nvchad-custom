@@ -39,6 +39,10 @@ M.general = {
     -- Split
     ["|"] = { ":vsp<CR>", "Split Vertical" },
     ["<leader><ESC>"] = { ":q<CR>", "Close cmd" },
+
+    -- Telescope
+    ["<leader>fs"] = {"<Cmd>Telescope lsp_document_symbols<CR>", "Find lsp symbols" },
+    ["<leader>ft"] = {"<Cmd>Telescope treesitter<CR>", "Find treesitter symbols" },
   },
 }
 
