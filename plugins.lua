@@ -345,6 +345,10 @@ local plugins = {
     end,
     dependencies = { { "nvim-tree/nvim-web-devicons" } },
   },
+  {
+    "Shatur/neovim-session-manager",
+    lazy = false,
+  },
   -- {
   --   "sindrets/diffview.nvim",
   --   lazy = false,
