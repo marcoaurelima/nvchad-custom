@@ -312,7 +312,7 @@ local plugins = {
     event = "VimEnter",
     config = function()
       require("dashboard").setup {
-        theme = "doom",
+        theme = "hyper",
         config = {
           week_header = {
             enable = true,
