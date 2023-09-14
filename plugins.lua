@@ -331,10 +331,10 @@ local plugins = {
       require("nvim-ts-autotag").setup()
     end,
   },
-  -- {
-  --   "sindrets/diffview.nvim",
-  --   lazy = false,
-  -- },
+  {
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
