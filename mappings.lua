@@ -43,6 +43,11 @@ M.general = {
     -- Telescope
     ["<leader>fs"] = {"<Cmd>Telescope lsp_document_symbols<CR>", "Find lsp symbols" },
     ["<leader>ft"] = {"<Cmd>Telescope treesitter<CR>", "Find treesitter symbols" },
+    ["<leader>fi"] = {"<Cmd>Telescope lsp_incoming_calls<CR>", "Find incoming calls" },
+    ["<leader>fO"] = {"<Cmd>Telescope lsp_outgoing_calls<CR>", "Find outgoing calls" },
+    ["<leader>fr"] = {"<Cmd>Telescope lsp_references<CR>", "Find references" },
+    ["<leader>fd"] = {"<Cmd>Telescope diagnostics<CR>", "Find diagnostics" },
+
   },
 }
 
