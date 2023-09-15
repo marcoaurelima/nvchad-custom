@@ -62,9 +62,9 @@ local plugins = {
       require("tabnine").setup {
         disable_auto_comment = true,
         --accept_keymap = "<Tab>",
-        accept_keymap = "<S-Right>",
+        accept_keymap = "<C-]>",
         -- dismiss_keymap = "<C-]>",
-        dismiss_keymap = "<S-Left>",
+        dismiss_keymap = "<C-[>",
         debounce_ms = 600,
         suggestion_color = { gui = "#808080", cterm = 244 },
         exclude_filetypes = { "TelescopePrompt" },
@@ -129,6 +129,9 @@ local plugins = {
     { "<leader>dt", function() require("dap").toggle_breakpoint() end, desc = "Toggle Breakpoint", },
     { "<leader>dx", function() require("dap").terminate() end, desc = "Terminate", },
     { "<leader>du", function() require("dap").step_out() end, desc = "Step Out", },
+
+    { "<leader>dl", function() require("dap").list_breakpoints() end, desc = "List Breakpoints", },
+    { "<leader>dz", function() require("dap").clear_breakpoints() end, desc = "Clear Breakpoints", },
   },
     opts = {
       setup = {
