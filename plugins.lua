@@ -142,7 +142,7 @@ local plugins = {
     },
     config = function(plugin, opts)
       vim.fn.sign_define("DapBreakpoint", { text = "🔴", texthl = "", linehl = "", numhl = "" })
-      vim.fn.sign_define("DapStopped", { text = "➜", texthl = "", linehl = "", numhl = "" })
+      vim.fn.sign_define("DapStopped", { text = "👉", texthl = "", linehl = "", numhl = "" })
 
       require("nvim-dap-virtual-text").setup {
         commented = true,
