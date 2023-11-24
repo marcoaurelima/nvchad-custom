@@ -48,6 +48,10 @@ M.general = {
     ["<leader>fr"] = {"<Cmd>Telescope lsp_references<CR>", "Find references" },
     ["<leader>fd"] = {"<Cmd>Telescope diagnostics<CR>", "Find diagnostics" },
     ["<leader>fM"] = {"<Cmd>Telescope marks<CR>", "Find marks" },
+
+    -- Markdown Preview
+    ["<leader>vo"] = {":MarkdownPreview<CR>", "Markdown Preview"},
+    ["<leader>vx"] = {":MarkdownPreviewStop<CR>", "Markdown Preview Stop"}
   },
 }
 
