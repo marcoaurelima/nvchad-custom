@@ -82,7 +82,7 @@ local plugins = {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
     ft = { "markdown" },
-    lazy = false
+    lazy = false,
   },
 
   {
@@ -348,6 +348,13 @@ local plugins = {
   {
     "sindrets/diffview.nvim",
     lazy = false,
+  },
+  {
+    "RaafatTurki/hex.nvim",
+    lazy = false,
+    config = function()
+      require("hex").setup()
+    end,
   },
   -- To make a plugin not be loaded
   -- {
