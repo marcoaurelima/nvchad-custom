@@ -49,6 +49,9 @@ M.mason = {
     "jdtls",
     "pyright",
     "autopep8",
+
+    -- golang
+    "delve"
   },
 }
 
