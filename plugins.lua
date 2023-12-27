@@ -54,25 +54,25 @@ local plugins = {
       "nvim-lua/plenary.nvim",
     },
   },
-  -- {
-  --   "codota/tabnine-nvim",
-  --   lazy = false,
-  --   build = "./dl_binaries.sh",
-  --   config = function()
-  --     require("tabnine").setup {
-  --       disable_auto_comment = true,
-  --       --accept_keymap = "<Tab>",
-  --       accept_keymap = "<C-]>",
-  --       -- dismiss_keymap = "<C-]>",
-  --       dismiss_keymap = "<C-[>",
-  --       debounce_ms = 600,
-  --       suggestion_color = { gui = "#808080", cterm = 244 },
-  --       exclude_filetypes = { "TelescopePrompt" },
-  --       log_file_path = nil, -- absolute path to Tabnine log file
-  --     }
-  --     -- require("tabnine.status").status()
-  --   end,
-  -- },
+  {
+    "codota/tabnine-nvim",
+    lazy = false,
+    build = "./dl_binaries.sh",
+    config = function()
+      require("tabnine").setup {
+        disable_auto_comment = true,
+        --accept_keymap = "<Tab>",
+        accept_keymap = "<C-]>",
+        -- dismiss_keymap = "<C-]>",
+        dismiss_keymap = "<C-[>",
+        debounce_ms = 600,
+        suggestion_color = { gui = "#808080", cterm = 244 },
+        exclude_filetypes = { "TelescopePrompt" },
+        log_file_path = nil, -- absolute path to Tabnine log file
+      }
+      -- require("tabnine.status").status()
+    end,
+  },
 
   {
     "iamcco/markdown-preview.nvim",
@@ -363,7 +363,7 @@ local plugins = {
     config = function()
       require("hlchunk").setup {
         indent = {
-          chars = { "¦", }, -- more code can be found in https://unicodeplus.com/
+          chars = { "¦" }, -- more code can be found in https://unicodeplus.com/
 
           style = {
             "#444444",
